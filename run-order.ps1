@@ -1,9 +1,6 @@
 # --- Variáveis de Configuração ---
 $GITHUB_USERNAME = "brianrafs"
-$GITHUB_EMAIL = "brianxdgmr@gmail.com"
 $SERVICE_NAME = "order"
-$RELEASE_VERSION = "v1.0.0"
-
 
 # --- Preparação do Ambiente ---
 Write-Host "Instalando ferramentas do Go Protobuf..." -ForegroundColor Cyan
@@ -59,4 +56,3 @@ Write-Host "Módulo Go configurado em $(Get-Location)." -ForegroundColor Green
 
 
 Set-Location ../../
-
