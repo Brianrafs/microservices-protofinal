@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package shipping;
+
+option go_package = "github.com/brianrafs/microservices-proto/golang/shipping;shipping";
+
+message ShippingItem {
+  string product_code = 1;
+  int64 quantity = 2;
+}
+
+message ShippingRequest {
+  int64 order_id = 1;
+  repeated ShippingItem items = 2;
+}
+
+message ShippingResponse {
+  int64 estimated_days = 1;
+}
+
+service Shipping {
+  rpc GetDeliveryEstimate(ShippingRequest) returns (ShippingResponse);
+}
