@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package shipping;
 
-option go_package = "github.com/brianrafs/microservices-proto/golang/shipping;shipping";
+option go_package = "github.com/brianrafs/microservices-protofinal/golang/shipping;shipping";
 
 message ShippingItem {
   string product_code = 1;

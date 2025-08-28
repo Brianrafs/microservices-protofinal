@@ -52,7 +52,7 @@ Write-Host "Inicializando o módulo Go..." -ForegroundColor Cyan
 Set-Location -Path "./golang/$SERVICE_NAME"
 
 
-go mod init "github.com/$GITHUB_USERNAME/microservices-proto/golang/$SERVICE_NAME"
+go mod init "github.com/$GITHUB_USERNAME/microservices-protofinal/golang/$SERVICE_NAME"
 go mod tidy
 
 Write-Host "Módulo Go configurado em $(Get-Location)." -ForegroundColor Green

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github/brianrafs/microservices-proto/golang/payment";
+option go_package = "github/brianrafs/microservices-protofinal/golang/payment";
 
 message CreatePaymentRequest {
     int64 user_id = 1;
